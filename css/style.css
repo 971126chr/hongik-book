@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+.wrap-width {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+.steps {
+    margin-top: 39px;
+}
+ul.step-list {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+ul.step-list li {
+    float: left;
+    line-height: 41px;
+}
+ul.step-list li.step-1 {
+    background: url("../img/main/step-white-center.png") repeat-x;
+    display: inline-block;
+}
+span.step-white-left {
+    background: url("../img/main/step-1-left.png") no-repeat left;
+    display: inline-block;
+    padding-left: 29px;
+}
+span.step-white-right {
+    background: url("../img/main/step-white-right.png") no-repeat right;
+    display: inline-block;
+    padding-right: 28px;
+}
+ul.step-list::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+h2.shopping-basket {
+    line-height: 41px;
+    font-size: 22px;
+    color: #333333;
+    letter-spacing: -2px;
+}
+.h2-bottom {
+    border: 1px solid #295a9c;
+    background: #376bb2;
+    height: 4px;
+}
+.small-table-top {
+    margin-top: 20px;
+}
+h3.table-caption {
+    font-size: 0;
+}
+table.small-table {
+    border-top: 1px solid #99bddd;
+    border-bottom: 1px solid #99bddd;
+    width: 100%;
+    line-height: 29px;
+}
