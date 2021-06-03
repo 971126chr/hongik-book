@@ -156,10 +156,54 @@ p.tab-bar-p, dl.about-table-list {
     top: 10px;
     right: 20px;
 }
+.hover-box {
+    background: url("../img/main/hover-box.png") repeat-x;
+    line-height: 81px;
+    display: inline-block;
+    width: 131px;
+    height: 81px;
+    position: absolute;
+    top: 29px;
+    right: -5px;
+    z-index: 1;
+}
+span.hover-box-left {
+    display: inline-block;
+    background: url("../img/main/hover-box-left.png") no-repeat left;
+    padding-left: 11px;
+    height: 81px;
+}
+span.hover-box-right {
+    display: inline-block;
+    background: url("../img/main/hover-box-right.png") no-repeat right;
+    padding-right: 9px;
+    height: 81px;
+}
+p.hover-box-text {
+    font-size: 11px;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    line-height: 12px;
+}
+button.hover-box-close {
+    border: none;
+    background: url("../img/main/hover-box-close.png") no-repeat center center;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
 .order-product {
     padding-top: 27px;
     border-top: 2px solid #295a9c;
     margin-top: -2px;
+}
+.your-shopping > div.order-product:nth-child(5) {
+    border-top: none;
+}
+.your-shopping > div.order-product:nth-child(5) > .order-table > table.main-table > tbody > tr:last-child > td {
+    border-bottom: 1px solid #ffffff;
 }
 span.green-marker {
     background: url("../img/main/green-marker.png") no-repeat right center;
@@ -215,7 +259,7 @@ table.main-table th {
     line-height: 32px;
     border: 1px solid #e9e9e9;
 }
-table.main-table th:last-child {
+table.main-table th:last-child, table.main-table td:last-child {
     text-align: left;
     padding-left: 10px;
 }
@@ -225,13 +269,23 @@ table.main-table th:first-child, table.main-table tr td:first-child {
 table.main-table th:last-child, table.main-table tr td:last-child {
     border-right: none;
 }
+table.main-table input.checkbox {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #c6c6c6;
+}
+table.main-table > tbody > tr > td > input.checkbox {
+    position: absolute;
+    top: 42px;
+    left: 10px;
+}
 table.main-table tr td {
     font-size: 12px;
     min-height: 94px;
     line-height: 16px;
     border: 1px solid #e9e9e9;
 }
-table.main-table td:first-child {
+table.main-table tbody tr td:first-child {
     font-weight: bold;
     color: #222222;
     padding: 33px 26px 37px 20px;
@@ -268,7 +322,8 @@ button.more-read {
     font-size: 8px;
 }
 table.main-table td:nth-child(3),
-table.main-table td:nth-child(4) {
+table.main-table td:nth-child(4),
+table.main-table td:nth-child(5) {
     text-align: center;
 }
 span.percent-text {
@@ -281,4 +336,173 @@ strong.green-text {
     color: #349e00;
     padding-left: 20px;
     background: url("../img/main/product-price-m.png") no-repeat left center;
+}
+label {
+    cursor: pointer;
+}
+label.num-change {
+    padding: 9px 36px;
+}
+input.num-text-box, button.change-btn {
+    border: 1px solid #c6c6c6;
+    line-height: 22px;
+    width: 41px;
+    text-align: center;
+}
+button.change-btn {
+    background: linear-gradient( to bottom, #ffffff, #f1f1f1);
+    color: #818181;
+    line-height: 23px;
+    display: block;
+    margin: 5px 0 0 26px;
+}
+table.main-table td:last-child {
+    vertical-align: middle;
+    position: relative;
+}
+.keep-delete-position {
+    display: inline-block;
+    margin-left: 28px;
+}
+button.keep-btn {
+    display: inline-block;
+    background: url("../img/main/keep-btn.png") repeat-x;
+    border: none;
+    line-height: 21px;
+    color: #ffffff;
+}
+span.keep-btn-left {
+    display: inline-block;
+    background: url("../img/main/keep-btn-left.png") no-repeat left;
+    padding-left: 13px;
+}
+span.keep-btn-right {
+    display: inline-block;
+    background: url("../img/main/keep-btn-right.png") no-repeat right;
+    padding-right: 14px;
+}
+button.delete-btn {
+    display: inline-block;
+    background: url("../img/main/delete-btn.png") repeat-x;
+    line-height: 21px;
+    border: none;
+    margin-top: 4px;
+}
+span.delete-btn-left {
+    display: inline-block;
+    background: url("../img/main/delete-btn-left.png") no-repeat left;
+    padding-left: 27px;
+}
+span.delete-btn-right {
+    display: inline-block;
+    background: url("../img/main/delete-btn-right.png") no-repeat right;
+    padding-right: 27px;
+}
+table.main-table > tfoot > tr > td:first-child {
+    line-height: 33px;
+    background: #f9f9f9;
+    border-bottom: 2px solid #e9e9e9;
+    padding-right: 5px;
+    text-align: right;
+}
+b.tfoot-text {
+    color: #222222;
+}
+button.gray-btn {
+    display: inline-block;
+    border: none;
+    background: url("../img/main/gray-btn.png") repeat-x;
+    line-height: 21px;
+    color: #ffffff;
+}
+span.gray-btn-left {
+    display: inline-block;
+    background: url("../img/main/gray-btn-left.png") no-repeat left;
+    padding-left: 12px;
+}
+span.gray-btn-right {
+    display: inline-block;
+    background: url("../img/main/gray-btn-right.png") no-repeat right;
+    padding-right: 12px;
+}
+table.main-table tfoot button.keep-btn {
+    margin-left: 7px;
+}
+table.main-table tfoot button.delete-btn {
+    letter-spacing: 2px;
+}
+table.main-table tfoot span.delete-btn-left {
+    padding-left: 16px;
+}
+table.main-table tfoot span.delete-btn-right {
+    padding-right: 16px;
+}
+.table-bottom-contents {
+    margin-top: 40px;
+    width: 100%;
+}
+.delivery, .order-table-position {
+    display: inline-block;
+    width: 51%;
+}
+.order-table-position {
+    width: 47.8%;
+    margin-left: 5px;
+}
+.maybe-delivery, .sale {
+    border: 1px solid #dadada;
+    line-height: 46px;
+    font-size: 14px;
+    padding-left: 28px;
+    letter-spacing: -1px;
+}
+.maybe-delivery button.keep-btn {
+    margin-left: 8px;
+}
+.maybe-delivery span.keep-btn-left {
+    padding-left: 10px;
+}
+.maybe-delivery span.keep-btn-right {
+    padding-right: 10px;
+}
+.sale {
+    line-height: 34px;
+    margin-top: 8px;
+}
+p.sale-p {
+    font-size: 12px;
+}
+table.order-table {
+    border: 1px solid #99bddd;
+    width: 100%;
+    color: #1770b5;
+    font-size: 14px;
+}
+table.order-table > tbody > tr {
+    line-height: 30px;
+}
+table.order-table > tbody > tr > th {
+    text-align: left;
+    padding-left: 10px;
+}
+table.order-table > tbody > tr > td {
+    text-align: right;
+    padding-right: 14px;
+}
+table.order-table tbody tr th, table.order-table tbody tr td {
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+table.order-table > tbody > tr:nth-child(3) > th, table.order-table > tbody > tr:nth-child(3) > td {
+    border-bottom: 2px solid #99bddd;
+}
+table.order-table tbody tr td {
+    border-right: none;
+}
+button.send-price {
+    background: url("../img/main/send-price.png") no-repeat right;
+    margin-left: 24px;
+    border: none;
+    width: 12px;
+    height: 12px;
 }
