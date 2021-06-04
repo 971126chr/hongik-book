@@ -3,7 +3,7 @@
 }
 .wrap-width {
     width: 950px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     position: relative;
     color: #777777;
 }
@@ -18,22 +18,56 @@ ul.step-list {
 ul.step-list li {
     float: left;
     line-height: 41px;
+    display: inline-block;
+    font-size: 14px;
+    color: #454545;
+    letter-spacing: -1px;
+    font-weight: bold;
 }
 ul.step-list li.step-1 {
     background: url("../img/main/step-white-center.png") repeat-x;
-    display: inline-block;
 }
 span.step-white-left {
     background: url("../img/main/step-1-left.png") no-repeat left;
     display: inline-block;
     padding-left: 29px;
+    line-height: 39px;
 }
 span.step-white-right {
-    background: url("../img/main/step-white-right.png") no-repeat right;
+    background: url("../img/main/step-white-blue.png") no-repeat right;
     display: inline-block;
     padding-right: 28px;
+    line-height: 39px;
 }
-ul.step-list::after, ul.tab-bar::after, dl.about-table-list::after, ul.about-book::after {
+span.step-blue-right {
+    background: url("../img/main/step-2-right.png") no-repeat right;
+    padding-right: 31px;
+    display: inline-block;
+    line-height: 39px;
+}
+ul.step-list li.step-2 {
+    background: url("../img/main/step-2-center.png") repeat-x;
+    color: #ffffff;
+    line-height: 40px;
+}
+ul.step-list li.step-3 {
+    background: url("../img/main/step-white-center.png") repeat-x;
+}
+span.step-white-last-right {
+    background: url("../img/main/step-white-right.png") no-repeat right;
+    padding-right: 39px;
+    display: inline-block;
+    line-height: 39px;
+}
+span.step-text {
+    font-size: 10px;
+    color: #7c7c7c;
+    padding-left: 12px;
+}
+ul.step-list li.step-2 span.step-text {
+    color: #e7e7e7;
+}
+ul.step-list::after, ul.tab-bar::after, dl.about-table-list::after, ul.about-book::after, ul.cards::after {
     display: block;
     content: "";
     clear: both;
@@ -119,7 +153,7 @@ span.guide-btn-right {
     line-height: 16.5px;
     color: #222222;
 }
-strong.red-text {
+strong.red-text, th.red-text, td.red-text {
     color: #e54c29;
     font-size: 14px;
 }
@@ -448,6 +482,7 @@ table.main-table tfoot span.delete-btn-right {
 .order-table-position {
     width: 47.8%;
     margin-left: 5px;
+    vertical-align: top;
 }
 .maybe-delivery, .sale {
     border: 1px solid #dadada;
@@ -496,6 +531,10 @@ table.order-table tbody tr th, table.order-table tbody tr td {
 table.order-table > tbody > tr:nth-child(3) > th, table.order-table > tbody > tr:nth-child(3) > td {
     border-bottom: 2px solid #99bddd;
 }
+table.order-table > tbody > tr:last-child > th, 
+table.order-table > tbody > tr:last-child > td {
+    border-bottom: 1px solid #99bddd;
+}
 table.order-table tbody tr td {
     border-right: none;
 }
@@ -505,4 +544,147 @@ button.send-price {
     border: none;
     width: 12px;
     height: 12px;
+}
+button.calculator {
+    display: inline-block;
+    background: url("../img/main/calculator.png") repeat-x;
+    line-height: 20px;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    color: #575757;
+    margin-left: 12px;
+}
+span.calculator-left {
+    display: inline-block;
+    background: url("../img/main/calculator-left.png") no-repeat left;
+    padding-left: 13px;
+}
+span.calculator-right {
+    display: inline-block;
+    background: url("../img/main/calculator-right.png") no-repeat right;
+    padding-right: 10px;
+}
+table.order-table > tbody > tr:nth-child(5) > th > button.send-price {
+    margin-left: 3px;
+}
+.main-btn-position {
+    margin-top: 31px;
+    text-align: center;
+}
+button.order-btn, button.more-btn {
+    display: inline-block;
+    border: none;
+    background: url("../img/main/order-btn.png") repeat-x;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    line-height: 48px;
+    font-weight: bold;
+}
+span.order-btn-left {
+    display: inline-block;
+    background: url("../img/main/order-btn-left.png") no-repeat left;
+    padding-left: 35px;
+}
+span.order-btn-right, span.more-btn-right {
+    display: inline-block;
+    background: url("../img/main/order-btn-right.png") no-repeat right;
+    padding-right: 36px;
+}
+
+button.more-btn {
+    background: url("../img/main/more-btn.png") repeat-x;
+    color: #575757;
+    margin-left: 7px;
+}
+span.more-btn-left {
+    display: inline-block;
+    background: url("../img/main/more-btn-left.png") no-repeat left;
+    padding-left: 33px;
+}
+span.more-btn-right {
+    background: url("../img/main/more-btn-right.png") no-repeat right;
+}
+.total-content {
+    margin-top: 41px;
+    padding-top: 10px;
+    border-top: 1px dotted #bdbdbd;
+}
+.your-shopping-basket, .card-guide {
+    border: 1px solid #dadada;
+}
+h3.your-shopping-basket-h3, h3.card-guide-h3 {
+    line-height: 28px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    background: linear-gradient( to bottom, #ffffff, #f8f8f8);
+    padding-left: 10px;
+    color: #333333;
+    font-size: 14px;
+}
+.your-shopping-basket-guide {
+    padding: 6px 0 6px 15px;
+    font-size: 12px;
+    color: #222222;
+    line-height: 22px;
+    border-top: 1px solid #dadada;
+}
+.your-shopping-basket-guide p.your-shopping-basket-text:first-child {
+    display: inline-block;
+}
+p.your-shopping-basket-text {
+    background: url("../img/main/green-marker.png") no-repeat left center;
+    padding-left: 19px;
+}
+.your-shopping-basket-guide button.guide-btn {
+    margin-left: 12px;
+}
+.card-guide {
+    margin-top: 9px;
+}
+h3.card-guide-h3 {
+    border: none;
+    background: none;
+}
+ul.cards {
+    min-height: 107px;
+    border-top: 1px solid #dadada;
+}
+ul.cards li {
+    float: left;
+    width: 14%;
+    text-align: center;
+    padding-top: 27px;
+}
+ul.cards li:first-child img.kbcard,
+ul.cards li:nth-child(5) img.lotte-card {
+    padding-bottom: 15px;
+}
+ul.cards li:nth-child(2) img.shinhan-card,
+ul.cards li:nth-child(4) img.keb-card {
+    padding-bottom: 12px;
+}
+ul.cards li:nth-child(3) img.hyundai-card,
+ul.cards li:nth-child(6) img.bc-card {
+    padding-bottom: 13px;
+}
+ul.cards li:last-child img.samsung-card {
+    padding-bottom: 17px;
+}
+ul.cards li:nth-child(4) {
+    padding-top: 19px;
+}
+ul.cards li:nth-child(6) {
+    padding-top: 20px;
+}
+ul.cards li:last-child {
+    padding-top: 26px;
+}
+span.card-text {
+    display: block;
+    line-height: 14px;
+    font-size: 10.5px;
+    color: #858585;
+    letter-spacing: -1px;
 }
