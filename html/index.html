@@ -21,10 +21,14 @@
                         </span>
                     </li>
                     <li class="step-2">
-                        <span class="step-text">STEP 2</span> 주문·결제
+                        <span class="step-blue-right">
+                            <span class="step-text">STEP 2</span> 주문·결제
+                        </span>
                     </li>
                     <li class="step-3">
-                        <span class="step-text">STEP 3</span> 주문완료
+                        <span class="step-white-last-right">
+                            <span class="step-text">STEP 3</span> 주문완료
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -230,7 +234,7 @@
                                     <th scope="col">상품명</th>
                                     <th scope="col">상품금액</th>
                                     <th scope="col">
-                                        <label for="num" class="num-change">수량</label>
+                                        <label for="num-2" class="num-change">수량</label>
                                     </th>
                                     <th scope="col">합계</th>
                                     <th scope="col"><input type="checkbox" class="checkbox"></th>
@@ -258,7 +262,7 @@
                                         <strong class="green-text">130원</strong>
                                     </td>
                                     <td>
-                                        <input id="num" type="text" class="num-text-box" value="2">
+                                        <input id="num-2" type="text" class="num-text-box" value="2">
                                         <button class="change-btn">변경</button>
                                     </td>
                                     <td>
@@ -377,8 +381,94 @@
                                     </th>
                                     <td>0 원</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row" class="red-text">총 주문금액
+                                        <button class="calculator">
+                                            <span class="calculator-left">
+                                                <span class="calculator-right">
+                                                    주문계산기
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </th>
+                                    <td class="red-text">44,200원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">예상 적립 마일리지
+                                        <button class="send-price" title="예상 적립 마일리지 안내"></button>
+                                    </th>
+                                    <td>2,120원</td>
+                                </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="main-btn-position">
+                        <button class="order-btn">
+                            <span class="order-btn-left">
+                                <span class="order-btn-right">
+                                    주문하기
+                                </span>
+                            </span>
+                        </button>
+                        <button class="more-btn">
+                            <span class="more-btn-left">
+                                <span class="more-btn-right">계속쇼핑</span>
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="total-content">
+                    <div class="your-shopping-basket">
+                        <h3 class="your-shopping-basket-h3">장바구니 안내</h3>
+                        <div class="your-shopping-basket-guide">
+                            <p class="your-shopping-basket-text">
+                                예상출고일이란, 주문상품의 결제(입금)가 확인된 날 기준으로 상품을 준비하여 상품출고가 가능한 기간입니다.
+                            </p>
+                            <button class="guide-btn">
+                                <span class="guide-btn-left">
+                                    <span class="guide-btn-right">
+                                        예상출고일 안내
+                                    </span>
+                                </span>
+                            </button>
+                            <p class="your-shopping-basket-text">
+                                쿠폰 또는 마일리지 사용 시 예상적립 마일리지는 변동될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-guide">
+                        <h3 class="card-guide-h3">신용카드 무이자 혜택</h3>
+                        <ul class="cards">
+                            <li>
+                                <img class="kbcard" alt="KB card 로고" src="../img/main/kbcard.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="shinhan-card" alt="신한카드 로고" src="../img/main/shinhan-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="hyundai-card" alt="현대카드 로고" src="../img/main/hyundai-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="keb-card" alt="keb카드 로고" src="../img/main/keb-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="lotte-card" alt="롯데카드 로고" src="../img/main/lotte-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="bc-card" alt="비씨카드 로고" src="../img/main/bc-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                            <li>
+                                <img class="samsung-card" alt="삼성카드 로고" src="../img/main/samsung-card.png">
+                                <span class="card-text">5만원 이상 구매시<br>2~3개월 무이자할부</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
