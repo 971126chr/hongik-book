@@ -308,10 +308,17 @@ table.main-table input.checkbox {
     height: 11px;
     border: 1px solid #c6c6c6;
 }
-table.main-table > tbody > tr > td > input.checkbox {
+table.main-table > tbody > tr > td > label > input.checkbox {
     position: absolute;
     top: 42px;
     left: 10px;
+}
+label.checkbox-cursor-th {
+    padding: 8px 120px 9px 0px;
+}
+label.checkbox-cursor {
+    content: "";
+    padding: 67px 29px 23px 0px;
 }
 table.main-table tr td {
     font-size: 12px;
@@ -396,7 +403,7 @@ table.main-table td:last-child {
 }
 .keep-delete-position {
     display: inline-block;
-    margin-left: 28px;
+    text-align: right;
 }
 button.keep-btn {
     display: inline-block;
