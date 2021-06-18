@@ -14,68 +14,52 @@ ul.step-list {
     display: inline-block;
     position: absolute;
     right: 0;
+    background: url("../img/main/step.png") no-repeat left;
+    min-width: 447px;
 }
 ul.step-list li {
     float: left;
     line-height: 41px;
-    font-size: 14px;
-    color: #454545;
-    letter-spacing: -1px;
-    font-weight: bold;
+    font-size: 0;
+    background: url("../img/main/step-1-korean.png") no-repeat right;
+    width: 88px;
+    padding: 0 88px 0 41px;
 }
-ul.step-list li.step-1 {
-    background: url("../img/main/step-white-center.png") repeat-x;
+ul.step-list li:nth-child(2) {
+    background: url("../img/main/step-2-korean.png") no-repeat right;
+    width: 96px;
+    padding: 0 96px 0 51px;
 }
-span.step-white-left {
-    background: url("../img/main/step-1-left.png") no-repeat left;
-    display: inline-block;
-    padding-left: 29px;
-    line-height: 39px;
-}
-span.step-white-right {
-    background: url("../img/main/step-white-blue.png") no-repeat right;
-    display: inline-block;
-    padding-right: 28px;
-    line-height: 39px;
-}
-span.step-blue-right {
-    background: url("../img/main/step-2-right.png") no-repeat right;
-    padding-right: 31px;
-    display: inline-block;
-    line-height: 39px;
-}
-ul.step-list li.step-2 {
-    background: url("../img/main/step-2-center.png") repeat-x;
-    color: #ffffff;
-    line-height: 40px;
-}
-ul.step-list li.step-3 {
-    background: url("../img/main/step-white-center.png") repeat-x;
-}
-span.step-white-last-right {
-    background: url("../img/main/step-white-right.png") no-repeat right;
-    padding-right: 39px;
-    display: inline-block;
-    line-height: 39px;
+ul.step-list li:last-child {
+    background: url("../img/main/step-3-korean.png") no-repeat right;
+    width: 91px;
+    padding: 0 88px 0 44px;
 }
 span.step-text {
-    font-size: 10px;
-    color: #7c7c7c;
+    font-size: 0;
     padding-left: 12px;
+    background: url("../img/main/step-1-text.png") no-repeat left;
+    width: 32px;
+    line-height: 41px;
+    float: left;
 }
-ul.step-list li.step-2 span.step-text {
-    color: #e7e7e7;
+ul.step-list li:nth-child(2) span.step-text {
+    background: url("../img/main/step-2-text.png") no-repeat left;
+    width: 34px;
 }
-ul.step-list::after, ul.tab-bar::after, dl.about-table-list::after, ul.about-book::after, ul.cards::after {
+ul.step-list li:last-child span.step-text {
+    background: url("../img/main/step-3-text.png") no-repeat left;
+    width: 34px;
+}
+ul.step-list::after, ul.step-list li::after, ul.tab-bar::after, dl.about-table-list::after, ul.about-book::after, ul.cards::after {
     display: block;
     content: "";
     clear: both;
 }
 h2.shopping-basket {
     line-height: 41px;
-    font-size: 22px;
-    color: #333333;
-    letter-spacing: -2px;
+    font-size: 0;
+    background: url("../img/main/main-h2.png") no-repeat left;
 }
 .h2-bottom {
     border: 1px solid #295a9c;
@@ -103,6 +87,10 @@ table.small-table th {
 }
 table.small-table tr th:first-child {
     border-left: none;
+    letter-spacing: 1.2px;
+}
+table.small-table tr th:nth-child(2) {
+    letter-spacing: 1.5px;
 }
 table.small-table tr th:last-child, table.small-table tr td:last-child {
     border-right: none;
@@ -116,6 +104,10 @@ table.small-table td {
 table.small-table td:first-child {
     text-align: center;
     padding-right: 0;
+    padding-left: 3px;
+}
+table.small-table td:not(:first-child) {
+    padding-left: 2px;
 }
 .maybe-release {
     margin-top: 11px;
