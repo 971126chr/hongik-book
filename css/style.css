@@ -99,18 +99,18 @@ table.small-table td:not(:first-child) {
     letter-spacing: -0.01px;
 }
 button.guide-btn {
-    margin-top: 6px;
+    margin: 4px 0 0 11px;
     background: url("../img/main/guide-btn.png") repeat-x;
     display: inline-block;
     border: none;
     line-height: 18px;
     color: #ffffff;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.8px;
 }
 span.guide-btn-left {
     background: url("../img/main/guide-btn-left.png") no-repeat left;
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 9px;
 }
 span.guide-btn-right {
     background: url("../img/main/guide-btn-right.png") no-repeat right;
@@ -283,9 +283,13 @@ table.main-table th {
     line-height: 33px;
     border: 1px solid #e9e9e9;
 }
+table.main-table tr th:nth-child(2) {
+    text-align: right;
+    padding-right: 140px;
+}
 table.main-table th:last-child, table.main-table td:last-child {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 9px;
 }
 table.main-table th:first-child, table.main-table tr td:first-child {
     border-left: none;
@@ -313,26 +317,32 @@ label.checkbox-cursor {
 table.main-table tr td {
     font-size: 12px;
     min-height: 94px;
-    line-height: 16px;
+    line-height: 15px;
     border: 1px solid #e9e9e9;
 }
 table.main-table tbody tr td:first-child {
     font-weight: bold;
     color: #222222;
-    padding: 33px 26px 37px 20px;
+    padding: 30px 23px 26px 20px;
+    letter-spacing: 0.6px;
     text-align: center;
+    vertical-align: top;
 }
 table.main-table td.product-name {
-    padding: 5px 0 4px 16px;
+    padding: 5px 40px 4px 16px;
 }
 .book-right-text {
     display: inline-block;
-    margin-left: 9px;
+    margin-left: 10px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    color: #222222;
     vertical-align: middle;
 }
 ul.about-book li {
     float: left;
-    letter-spacing: -1px;
+    color: #666666;
+    letter-spacing: -0.5px;
     padding: 0 8px;
     background: url("../img/main/about-book-line.png") no-repeat right;
 }
@@ -349,13 +359,25 @@ strong.black-text {
 button.more-read {
     border: 1px solid #d0d0d0;
     background: linear-gradient( to bottom, #ffffff, #f2f2f2);
-    padding: 0 5px 0 7px;
-    font-size: 8px;
+    padding: 0 4px 0 6px;
+    margin-top: 2px;
+    font-size: 11px;
+}
+table.main-table td:nth-child(3) > strong.red-text,
+table.main-table td:nth-child(5) > strong.red-text {
+    letter-spacing: 1.8px;
 }
 table.main-table td:nth-child(3),
 table.main-table td:nth-child(4),
 table.main-table td:nth-child(5) {
     text-align: center;
+    line-height: 19px;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+table.main-table td:nth-child(4) {
+    padding-top: 5px;
 }
 span.percent-text {
     color: #0172c9;
@@ -365,7 +387,8 @@ strong.green-text {
     display: inline-block;
     font-weight: bold;
     color: #349e00;
-    padding-left: 20px;
+    padding: 0 3px 0 20px;
+    margin-top: 1px;
     background: url("../img/main/product-price-m.png") no-repeat left center;
 }
 label {
@@ -376,16 +399,15 @@ label.num-change {
 }
 input.num-text-box, button.change-btn {
     border: 1px solid #c6c6c6;
-    line-height: 22px;
+    line-height: 21px;
     width: 41px;
     text-align: center;
 }
 button.change-btn {
     background: linear-gradient( to bottom, #ffffff, #f1f1f1);
     color: #818181;
-    line-height: 23px;
     display: block;
-    margin: 5px 0 0 26px;
+    margin: 5px 0 0 20px;
 }
 table.main-table td:last-child {
     vertical-align: middle;
@@ -394,12 +416,14 @@ table.main-table td:last-child {
 .keep-delete-position {
     display: inline-block;
     text-align: right;
+    padding: 14px 6px 0 0;
 }
 button.keep-btn {
     display: inline-block;
     background: url("../img/main/keep-btn.png") repeat-x;
     border: none;
     line-height: 21px;
+    letter-spacing: -1.7px;
     color: #ffffff;
 }
 span.keep-btn-left {
@@ -416,8 +440,9 @@ button.delete-btn {
     display: inline-block;
     background: url("../img/main/delete-btn.png") repeat-x;
     line-height: 21px;
+    letter-spacing: -3px;
     border: none;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 span.delete-btn-left {
     display: inline-block;
@@ -444,6 +469,7 @@ button.gray-btn {
     border: none;
     background: url("../img/main/gray-btn.png") repeat-x;
     line-height: 21px;
+    letter-spacing: -0.86px;
     color: #ffffff;
 }
 span.gray-btn-left {
@@ -456,50 +482,68 @@ span.gray-btn-right {
     background: url("../img/main/gray-btn-right.png") no-repeat right;
     padding-right: 12px;
 }
-table.main-table tfoot button.keep-btn {
+table.main-table tfoot button.keep-btn,
+.maybe-delivery button.keep-btn {
     margin-left: 7px;
+    font-size: 11.5px;
+    letter-spacing: -0.8px;
 }
 table.main-table tfoot button.delete-btn {
     letter-spacing: 2px;
 }
 table.main-table tfoot span.delete-btn-left {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 table.main-table tfoot span.delete-btn-right {
-    padding-right: 16px;
+    padding-right: 13px;
 }
 .table-bottom-contents {
-    margin-top: 40px;
+    margin-top: 39px;
     width: 100%;
+}
+.your-shopping .order-product:nth-child(5) {
+    padding-top: 26px;
 }
 .delivery, .order-table-position {
     display: inline-block;
-    width: 51%;
+    width: 56.32%;
 }
 .order-table-position {
-    width: 47.8%;
+    width: 42.56%;
     margin-left: 5px;
     vertical-align: top;
 }
 .maybe-delivery, .sale {
     border: 1px solid #dadada;
-    line-height: 46px;
+    line-height: 44px;
     font-size: 14px;
     padding-left: 28px;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
+}
+.maybe-delivery strong.red-text,
+.sale strong.red-text {
+    padding-left: 9px;
+    letter-spacing: 3px;
+}
+.sale strong.red-text {
+    letter-spacing: 1.2px;
 }
 .maybe-delivery button.keep-btn {
-    margin-left: 8px;
+    margin: 12px 0 0 9px;
+    vertical-align: top;
 }
 .maybe-delivery span.keep-btn-left {
-    padding-left: 10px;
+    padding-left: 9px;
 }
 .maybe-delivery span.keep-btn-right {
-    padding-right: 10px;
+    padding-right: 9px;
 }
 .sale {
-    line-height: 34px;
+    line-height: 18px;
+    padding: 15px 0 15px 28px;
     margin-top: 8px;
+    letter-spacing: 0;
+    min-height: 68px;
 }
 p.sale-p {
     font-size: 12px;
@@ -511,11 +555,12 @@ table.order-table {
     font-size: 14px;
 }
 table.order-table > tbody > tr {
-    line-height: 30px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
 }
 table.order-table > tbody > tr > th {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 9px;
 }
 table.order-table > tbody > tr > td {
     text-align: right;
@@ -534,6 +579,8 @@ table.order-table > tbody > tr:last-child > td {
 }
 table.order-table tbody tr td {
     border-right: none;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 button.send-price {
     background: url("../img/main/send-price.png") no-repeat right;
@@ -548,9 +595,11 @@ button.calculator {
     line-height: 20px;
     border: none;
     font-size: 10px;
+    vertical-align: middle;
+    letter-spacing: -1.2px;
     font-weight: bold;
     color: #575757;
-    margin-left: 12px;
+    margin-left: 11px;
 }
 span.calculator-left {
     display: inline-block;
@@ -572,12 +621,10 @@ table.order-table > tbody > tr:nth-child(5) > th > button.send-price {
 button.order-btn, button.more-btn {
     display: inline-block;
     border: none;
-    background: url("../img/main/order-btn.png") repeat-x;
-    font-size: 20px;
-    letter-spacing: -1px;
-    color: #ffffff;
+    background: url("../img/main/order-btn.png") no-repeat;
+    font-size: 0;
     line-height: 48px;
-    font-weight: bold;
+    width: 136px;
 }
 span.order-btn-left {
     display: inline-block;
@@ -612,7 +659,7 @@ span.more-btn-right {
     border: 1px solid #dadada;
 }
 h3.your-shopping-basket-h3, h3.card-guide-h3 {
-    line-height: 28px;
+    line-height: 26px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     background: linear-gradient( to bottom, #ffffff, #f8f8f8);
@@ -621,10 +668,11 @@ h3.your-shopping-basket-h3, h3.card-guide-h3 {
     font-size: 14px;
 }
 .your-shopping-basket-guide {
-    padding: 6px 0 6px 15px;
+    padding: 6px 0 8px 15px;
     font-size: 12px;
     color: #222222;
-    line-height: 22px;
+    letter-spacing: -0.2px;
+    line-height: 20px;
     border-top: 1px solid #dadada;
 }
 .your-shopping-basket-guide p.your-shopping-basket-text:first-child {
@@ -634,18 +682,17 @@ p.your-shopping-basket-text {
     background: url("../img/main/green-marker.png") no-repeat left center;
     padding-left: 19px;
 }
-.your-shopping-basket-guide button.guide-btn {
-    margin-left: 12px;
-}
 .card-guide {
     margin-top: 9px;
 }
 h3.card-guide-h3 {
     border: none;
     background: none;
+    line-height: 29px;
+    letter-spacing: -0.4px;
 }
 ul.cards {
-    min-height: 107px;
+    min-height: 108px;
     border-top: 1px solid #dadada;
 }
 ul.cards li {
@@ -683,5 +730,5 @@ span.card-text {
     line-height: 14px;
     font-size: 10.5px;
     color: #858585;
-    letter-spacing: -1px;
+    letter-spacing: 0;
 }
